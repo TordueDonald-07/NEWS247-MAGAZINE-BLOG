@@ -1,0 +1,368 @@
+/* blog details main container */
+.blog-details-container {
+    padding: 0 5%;
+    margin: 30px 0;
+}
+
+/* section contain main blog and aside */
+.blog-details-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+/* page indecator style */
+.page-indecator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+.page-indecator p.home {
+    color: #ff0000;
+}
+
+.page-indecator i {
+    font-size: 12px;
+}
+/* page indecator style end */
+
+/* main blog post */
+.blog-post-container{
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+}
+
+/* post grid start */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+.article-card {
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+.article-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.article-content {
+    padding: 15px 0;
+}
+.category {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.life-category {
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  position: absolute;
+}
+.article-title {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+.article-content .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.excerpt {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+.comments {
+    margin-left: 10px;
+}
+.comments i {
+    margin-right: 5px;
+}
+
+/* pagination start here */
+/* Pagination Container */
+.pagination {
+  display: flex;
+  justify-content: center; /* Center the pagination controls */
+  align-items: center;
+  margin: 20px 0; /* Space above and below the pagination */
+}
+
+/* Pagination Buttons */
+.pagination button {
+  background-color: #007BFF; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.pagination button:disabled {
+  background-color: #cccccc; /* Gray background when disabled */
+  cursor: not-allowed;
+}
+
+/* Page Indicator */
+.pagination #page-indicator {
+  font-size: 16px;
+  margin: 0 10px;
+  color: #333; /* Dark text color */
+}
+ 
+ /* aside start here */
+.blog-details-aside {
+  width: 300px;
+}
+
+.aside-search-section {
+  width: 100%;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.search-form h2 {
+  font-size: 1.1em;
+}
+.search-input {
+  width: 75%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+.search-button {
+  padding: 8px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.recent-posts h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.recent-posts ul {
+  list-style-type: none;
+  padding: 0;
+}
+.recent-posts li {
+  margin-bottom: 10px;
+}
+.recent-posts a {
+  color: #ff0000;
+  text-decoration: none;
+}
+.recent-posts a:hover {
+  text-decoration: underline;
+}
+
+/* recent comments */
+.recent-comments {
+  max-width: 100%;
+  margin: 20px 0;
+}
+.recent-comments h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.comment {
+  margin-bottom: 10px;
+}
+.comment a {
+  color: #cc0000;
+  text-decoration: none;
+}
+
+.comment a:hover {
+  color: #ff0000;
+}
+.comment .admin {
+  color: #ff0000;
+  font-weight: bold;
+}
+/* recent comments */
+
+/* archive section start */
+.sidebar {
+  max-width: 300px;
+}
+.sidebar .archives h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.archives ul {
+  list-style-type: initial;
+  padding: 0;
+  margin: 0 0 20px 20px;
+}
+.archives ul li {
+  margin-bottom: 5px;
+}
+
+.sidebar .categories a {
+  color: #000;
+  text-decoration: none;
+}
+.sidebar .categories ul {
+  list-style-type: initial;
+}
+.sidebar .archives a {
+  color: #0000FF;
+}
+.sidebar .categories .red {
+  color: #FF0000;
+}
+
+/* social media / join us style */
+.join-us {
+  width: 100%;
+  margin: 30px 0;
+}
+.join-us ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.join-us li {
+  margin-bottom: 10px;
+}
+.join-us ul a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+.join-us .icon {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+.rss { background-color: #FF9800; }
+.facebook { background-color: #3b5998; }
+.twitter { background-color: #1da1f2; }
+.google-plus { background-color: #dd4b39; }
+.youtube { background-color: #cd201f; }
+/* social media / joins us style end here */
+
+/* tags section */
+.tags-container {
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 30px;
+  margin: 30px 0;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag-list {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.tag-list:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+  
+/* responsiveness for medium screen sizes */
+@media (max-width: 1024px) {
+  .main-post-title {
+    font-size: 1.5em;
+}
+  .blog-details-flex {
+    gap: 40px;
+}
+  .blog-post-container {
+    max-width: 600px;
+  }
+  .grid-article {
+    flex-wrap: wrap;
+}
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+}
+/* responsiveness for large screen sizes */
+@media (max-width: 768px) {
+  .blog-details-aside {
+    width: 250px;
+}
+.blog-post-container {
+  max-width: 400px;
+}
+
+}
+/* responsiveness for mobile screen sizes */
+@media (max-width: 600px){
+  .blog-details-flex {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    gap: 20px;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-details-aside {
+  width: 400px;
+  max-width: 400px;
+}
+
+/* pagination start here */
+.pagination button {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.pagination #page-indicator {
+  font-size: 14px;
+}
+}
